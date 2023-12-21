@@ -1,2 +1,2 @@
-# pyfihub
+# PyFiHub - Demo
 [PyFiHub](https://pyfihub.net/)
