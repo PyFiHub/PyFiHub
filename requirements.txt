@@ -1,0 +1,11 @@
+Jinja2
+openpyxl
+pandas
+python-binance
+schedule
+streamlit
+streamlit-extras
+Pillow
+plotly
+validators
+yfinance
