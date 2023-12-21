@@ -1,2 +1,2 @@
 # pyfihub
-[PyFiHub](pyfihub.net)
+[PyFiHub](https://pyfihub.net/)
