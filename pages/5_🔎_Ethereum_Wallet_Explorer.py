@@ -193,13 +193,17 @@ def holdings_erc20(address, df, major_token_filter = False):
     total_amount_in = df_holdings['amount_in'].sum()
     total_amount_out = df_holdings['amount_out'].sum()
 
-    # Append row 'total' to DataFrame
-    df_holdings = df_holdings.append({
-        'tokenName': 'Total',
-        'current_holdings': total_current_holdings,
-        'amount_in': total_amount_in,
-        'amount_out': total_amount_out
-    }, ignore_index=True)
+    # Create a new DataFrame for the 'Total' row
+    total_row = pd.DataFrame({
+        'tokenName': ['Total'],
+        'current_holdings': [total_current_holdings],
+        'amount_in': [total_amount_in],
+        'amount_out': [total_amount_out]
+    })
+
+    # Concatenate the original DataFrame and the 'Total' row DataFrame
+    df_holdings = pd.concat([df_holdings, total_row], ignore_index=True)
+
     
     df_holdings.columns = ['Token Name','Amount In', 'Amount Out', 'Current Holdings']
     

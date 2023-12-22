@@ -74,3 +74,4 @@ if __name__ == "__main__":
 
         # Clean up temporary files
         os.remove("temp.html")
+        os.remove("output.pdf")
