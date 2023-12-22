@@ -55,6 +55,13 @@ def main():
         if live_prices:
             switch_page('ethereum wallet explorer')
 
+    col6, col7, col8, col9, col10 = st.columns([1,1,1,1,1])
+
+    with col6:
+        live_prices = st.button("📓 Markdown To PDF Converter")
+        if live_prices:
+            switch_page('markdown to pdf converter')
+
     st.text("")
     st.markdown("**Disclaimer:** ⚠️ This website uses data from third-party APIs. We do not guarantee or warrant the accuracy, completeness, or timeliness of the data. We are not responsible for any errors or omissions in the data, or for any losses or damages that may arise from the use of the data. We do not own or control the API that we use to obtain the data, and we are not affiliated with by the owning company. By using this website, you acknowledge and agree to these terms and conditions. This is not financial advice. ⚠️", unsafe_allow_html=True)
     st.text("")

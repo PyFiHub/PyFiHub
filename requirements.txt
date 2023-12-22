@@ -9,3 +9,6 @@ Pillow
 plotly
 validators
 yfinance
+Markdown
+markdown2
+pdfkit
